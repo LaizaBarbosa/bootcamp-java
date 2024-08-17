@@ -8,8 +8,8 @@ public class numPares {
         
         int resultado = numeros
         .stream()
-        .filter(n -> n % 2 == 0)
-        .reduce(0, Integer::sum);
+        .filter(n -> n % 2 == 0) //Predicate
+        .reduce(0, Integer::sum); //BinaryOperator
 
         System.out.println(resultado);        
     }
